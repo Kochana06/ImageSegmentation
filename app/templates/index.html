@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Image Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="logo">MIA</div>
+                <h1>Medical Image Analysis</h1>
+            </div>
+            <p class="subtitle">Advanced Tumor Detection & Segmentation</p>
+        </header>
+        
+        <main class="welcome-section">
+            <div class="hero">
+                <h2>AI-Powered Medical Imaging</h2>
+                <p>Revolutionizing tumor detection with cutting-edge machine learning algorithms</p>
+            </div>
+            
+            <div class="card">
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>Accurate Detection</h3>
+                        <p>Advanced AI algorithms for precise tumor identification with high confidence scores</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="22" y1="12" x2="18" y2="12"></line>
+                                <line x1="6" y1="12" x2="2" y2="12"></line>
+                                <line x1="12" y1="6" x2="12" y2="2"></line>
+                                <line x1="12" y1="22" x2="12" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>Detailed Segmentation</h3>
+                        <p>Pixel-perfect visualization of tumor boundaries for precise surgical planning</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>Size Measurement</h3>
+                        <p>Automatic calculation of tumor dimensions in pixels and real-world measurements</p>
+                    </div>
+                </div>
+                
+                <div class="cta-container">
+                    <a href="{{ url_for('home') }}" class="cta-button">
+                        Get Started
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <h2>Trusted by Medical Professionals</h2>
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <div class="quote">"This tool has significantly improved our diagnostic accuracy and reduced analysis time."</div>
+                        <div class="author">Dr. Sarah Johnson, Oncologist</div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="quote">"The segmentation quality is exceptional, allowing for more precise treatment planning."</div>
+                        <div class="author">Dr. Michael Chen, Radiologist</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">MIA</div>
+                <div class="footer-links">
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <p class="copyright">&copy; 2025 Medical Image Analysis Tool</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+/* styles.css */
+
+/* Apply a light background and a clean font to the whole page */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Style the heading */
+  h1 {
+    color: #333;
+    margin-top: 50px;
+  }
+  
+  /* Style the form container */
+  form {
+    margin-top: 30px;
+    display: inline-block;
+    background: #fff;
+    padding: 20px 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the file input */
+  input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+  
+  /* Style the submit button */
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

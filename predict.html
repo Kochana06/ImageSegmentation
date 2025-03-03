@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Space between images */
+    }
+    .image-container {
+      text-align: center;
+    }
+    img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Prediction Result</h1>
+  <p><strong>{{ prediction }}</strong></p>
+
+  <div class="container">
+    <div class="image-container">
+      <h3>Uploaded Image</h3>
+      <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+    </div>
+    
+    <div class="image-container">
+      <h3>Segmentation Result</h3>
+      <img src="{{ url_for('static', filename='segmentations/' + seg_filename) }}" alt="Segmentation Image">
+    </div>
+  </div>
+
+  <h3>Tumor Information</h3>
+  <p><strong>Tumor Size in Pixels:</strong> {{ tumor_size_pixels }}</p>
+  <p><strong>Tumor Size in cm²:</strong> {{ "%.2f"|format(tumor_size_mm2 / 100) }}</p>
+
+  <br><br>
+  <a href="{{ url_for('home') }}">Upload Another Image</a>
+
+</body>
+</html>

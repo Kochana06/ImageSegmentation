@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* General page styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  h1 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    color: #007BFF;
+  }
+  
+  /* Sub-heading styling */
+  h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Paragraph styling */
+  p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  /* Image styling */
+  img {
+    margin: 15px auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Link styling */
+  a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #0056b3;
+  }
+  
